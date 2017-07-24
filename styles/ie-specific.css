@@ -1,0 +1,6 @@
+html.msie .hero-header .hero-content h1 {
+  margin-right: 0; }
+html.msie select::-ms-expand {
+  display: none; }
+
+/*# sourceMappingURL=ie-specific.css.map */

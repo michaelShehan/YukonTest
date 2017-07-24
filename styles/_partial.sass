@@ -1,0 +1,63 @@
+
+@font-face
+    font-family: "ProximaNovaRegular"
+    src: url(../fonts/ProximaNova-Regular.eot), url(../fonts/ProximaNova-Regular.otf)
+
+@font-face
+    font-family: "ProximaNovaExtraBold"
+    src: url(../fonts/Proxima-Nova-Extrabold.eot), url(../fonts/Proxima-Nova-Extrabold.otf), url(../fonts/Proxima-Nova-Extrabold.ttf)
+
+@font-face
+    font-family: "ProximaNovaLight"
+    src: url(../fonts/proxima-nova-light-597047c57b4a3.eot), url(../fonts/proxima-nova-light-597047c57b4a3.otf)
+    font-weight: 100
+
+@font-face
+    font-family: "ProximaNovaMedium"
+    src: url(../fonts/proxima-nova-light-597047c57b4a3.eot), url(../fonts/proxima-nova-light-597047c57b4a3.otf)
+    font-weight: 600
+
+@font-face
+    font-family: "ProximaNovaThin"
+    src: url(../fonts/Proxima-Nova-Thin.eot), url(../fonts/Proxima-Nova-Thin.otf)
+    font-weight: 100
+
+$white: #fff
+$black: #000
+$aqua: #52b7a7
+$aquaDark: #58b795
+$orange: #f8af00
+$greyLight: #eeeeee
+$aqua1: #50b7ac
+$aqua2: #61b78c
+$greyWhite: #f4f4f4
+$grey: #c6c6c6
+$grey2: #a6a6a6
+
+$fontRegular: ProximaNovaRegular, "Segoe UI", Arial
+$fontExtraBold: ProximaNovaExtraBold, "Segoe UI", Arial
+$fontLight: ProximaNovaLight, "Segoe UI Light", Arial
+$fontMedium: ProximaNovaMedium, "Segoe UI Light", Arial
+$fontThin: ProximaNovaThin, "Segoe UI Light", Arial
+
+
+$containerMaxWidth: 1200px
+
+@mixin fontSizer($fontSize)
+    font-size: ($fontSize / 16px) * 1rem
+
+@mixin borderRadius($radius)
+    -webkit-border-radius: $radius
+    -moz-border-radius: $radius
+    border-radius: $radius
+    
+@mixin gradient($color1, $color2)
+    background: $color1 /* Old browsers */
+    background: -moz-linear-gradient(left, $color1 0%, $color2 100%)
+    background: -webkit-linear-gradient(left, $color1 0%, $color2 100%)
+    background: linear-gradient(to right, $color1 0%, $color2 100%)
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$color1, endColorstr=$color1,GradientType=1 )
+    
+@mixin clippedColumn()
+    padding-bottom: 9999px
+    margin-bottom: -9999px

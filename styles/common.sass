@@ -1,0 +1,339 @@
+
+@import 'partial'
+
+
+html
+    font-size: 1em
+    @media (max-width: 768px)
+        font-size: 0.875em
+    body
+        font-family: $fontRegular
+        position: relative
+        p
+            font-family: $fontRegular
+
+*
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+.container
+    width: 86.66%
+    @media (min-width: 1200px)
+        width: 1200px
+
+.orange
+    background-color: $orange
+    color: $white
+.aqua
+    background-color: $aqua
+    color: $white
+.aquaDark
+    background-color: $aquaDark
+    color: $white
+.white
+    background-color: $white
+    color: $black
+.whitegrey
+    background-color: $greyWhite
+    color: $black
+.txt-white
+    color: $white
+    
+.highlight-box
+    padding: 10px 30px
+    margin: 0
+    
+.inline-blcok
+    display: inline-block
+.clearAll
+    clear: both
+    
+.opacity-10
+    opacity: 0.1
+.opacity-15
+    opacity: 0.15
+    
+a
+    span.icon
+        display: inline-block
+        margin-right: 20px
+        &.round
+            @include borderRadius(50%)
+        &.menu
+            width: 82px
+            height: 82px
+            background: url(../images/icon-menu.png) center center no-repeat
+            background-color: $orange
+            margin-bottom: -36px
+            margin-left: 20px
+        &.menu-close
+            background: url(../images/icon-close.png) center center no-repeat
+            background-color: $orange
+            margin-bottom: -36px
+            margin-left: 20px
+        &.black-arrow
+            width: 60px
+            height: 60px
+            background: url(../images/icon-arrow-down-black.png) center center no-repeat
+            background-color: $white
+            border: $black solid 1px
+            margin-bottom: -27px
+        &.arrow-down
+            width: 60px
+            height: 60px
+            background: url(../images/icon-arrow-down.png) center center no-repeat
+            background-color: $orange
+            margin-bottom: -26px
+        &.arrow-up
+            width: 60px
+            height: 60px
+            background: url(../images/icon-arrow-down.png) center center no-repeat
+            background-color: $orange
+            margin-bottom: -26px
+            transform: rotate(180deg)
+    span.icon-arrow
+        display: inline-block
+        width: 10px
+        height: 15px
+        &.right
+            background: url(../images/icon-arrow-right.png) 0 0 no-repeat
+            margin-left: 15px
+    &:visited, &:focus
+        text-decoration: none
+    &.round-link
+        @include borderRadius(50%)
+        display: inline-block
+        width: 60px
+        height: 60px
+        margin-bottom: -16px
+        &.minus
+            background: url(../images/icon-minus.png) center center no-repeat
+            background-color: $grey
+        &.plus
+            background: url(../images/icon-plus.png) center center no-repeat
+            background-color: $orange
+                
+.horizontal-padding-none
+    padding-left: 0 !important
+    padding-right: 0 !important
+.left-padding-none
+    padding-left: 0 !important
+.right-padding-none
+    padding-right: 0 !important
+.bottom-padding-none
+    padding-bottom: 0 !important
+.top-padding-none
+    padding-top: 0 !important
+.desktop-hp-0
+//    @media (min-width: 768px)
+        padding-left: 0
+        padding-right: 0
+.desktop-left-padding-0
+    @media (min-width: 768px)
+        padding-left: 0
+.desktop-right-padding-0
+    @media (min-width: 768px)
+        padding-right: 0
+.bottom-margin
+    margin-bottom: 20px
+.background-gradient
+    @include gradient($aqua1, $aqua2)
+
+.img-box
+    img
+        width: 100%
+
+.desktop
+    @media (max-width: 768px)
+        display: none
+.mobile
+    @media (min-width: 768px)
+        display: none
+    
+.content-panel
+    padding-top: 142px
+    h2
+        font-family: $fontExtraBold
+        @include fontSizer(100px)
+        color: $black
+        padding: 0 0 80px 0
+        margin: 0
+        @media (max-width: 1024px)
+            @include fontSizer(80px)
+        @media (max-width: 540px)
+            @include fontSizer(60px)
+        @media (max-width: 480px)
+            @include fontSizer(40px)
+    h3
+        font-family: $fontExtraBold
+        @include fontSizer(31px)
+        color: $black
+        padding: 0 0 10px 0
+        margin: 0
+    p
+        @include fontSizer(26px)
+        margin: 0
+        padding: 0 0 40px 0
+        line-height: 1.325em
+        &.notes
+            @include fontSizer(14px)
+            color: $grey2
+    .quote
+        font-family: $fontThin
+        @include fontSizer(30px)
+        margin: 0 !important
+        padding: 0 !important
+        &:before
+            content: ""
+            display: inline-block
+            width: 23px
+            height: 18px
+            background: url(../images/icon-quote-open.png) 0 0 no-repeat
+            margin: 0 18px 4px 0
+        &:after
+            content: ""
+            display: inline-block
+            width: 23px
+            height: 18px
+            background: url(../images/icon-quote-close.png) 0 0 no-repeat
+            margin: 0 0 4px 18px
+    a.icon-link    
+        font-family: $fontLight
+        @include fontSizer(21px)
+        color: $black
+    .content-block
+        padding: 80px 60px 80px 80px
+        position: relative
+        @media (max-width: 768px)
+            padding: 50px 30px 50px 50px
+        &.cb2
+            padding: 60px 40px
+            @media (max-width: 768px)
+                padding: 40px 20px
+    a.box-link
+        background-color: transparent
+        border: $black solid 1px
+        font-family: $fontLight
+        @include fontSizer(21px)
+        padding: 10px 20px
+        &:hover
+            border-color: $black !important
+            color: $black !important
+            text-decoration: none
+    &.bottom-padding
+        padding-bottom: 100px
+            
+.clipping-row
+    overflow: hidden    
+    .clipped-column
+        padding-bottom: 9999px
+        margin-bottom: -9999px
+.fixed
+    width: 100%
+    position: fixed
+    top: 0
+    left: 0
+    z-index: 99999
+
+.form-record
+    margin-bottom: 20px
+    label
+        @include fontSizer(21px)
+        display: block
+        font-weight: normal
+        a
+            color: $black
+            text-decoration: underline
+    &:last-child
+        margin-bottom: 0
+        
+
+        
+input[type=text].form-control
+    width: 100%
+    height: 54px
+    background-color: $greyWhite
+    border: $greyLight solid 1px     
+    @include borderRadius(5px)
+    padding-left: 22px
+    padding-right: 12px
+    @include fontSizer(21px)
+select.form-control
+    @extend input[type=text].form-control
+    padding-right: 40px
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+    -webkit-appearance: none
+    -moz-appearance: none
+    background-image: linear-gradient(45deg, transparent 50%, $orange 50%), linear-gradient(135deg, $orange 50%, transparent 50%)
+    background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 14px) calc(1em + 2px)
+    background-size: 6px 7px, 6px 7px
+    background-repeat: no-repeat
+    
+input[type=radio]
+    visibility: hidden
+    position: absolute
+    & ~ label
+        display: inline-block
+        span
+            display: inline-block
+            width: 30px
+            height: 30px
+            background-color: $greyWhite
+            border: $greyLight solid 1px
+            @include borderRadius(50%)
+            margin-bottom: -8px
+            margin-right: 14px
+            position: relative
+    &:checked ~ label
+        span
+            &:after
+                content: ""
+                width: 16px
+                height: 16px
+                @include borderRadius(50%)
+                background-color: $orange
+                position: absolute
+                top: 6px
+                left: 6px
+input[type=checkbox]
+    visibility: hidden
+    position: absolute
+    & ~ label
+        display: inline-block
+        span
+            display: inline-block
+            width: 25px
+            height: 25px
+            background-color: $greyWhite
+            border: $greyLight solid 1px
+            @include borderRadius(5px)
+            margin-bottom: -8px
+            margin-right: 14px
+            position: relative
+    &:checked ~ label
+        span
+            &:after
+                content: ""
+                width: 18px
+                height: 14px
+                background: url(../images/icon-checkmark.png) 0 0 no-repeat
+                color: $orange
+                position: absolute
+                top: 5px
+                left: 3px
+input[type=submit]
+    background: url(../images/icon-arrow-right-lrg.png) 90% 27px no-repeat
+    background-color: $orange
+    color: $white
+    border: none
+    display: block
+    width: 100%
+    padding-left: 50px
+    text-align: left
+    min-height: 80px
+    @include fontSizer(21px)
+                
+
