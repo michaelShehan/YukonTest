@@ -156,11 +156,11 @@ a.round-link {
 .top-padding-none {
   padding-top: 0 !important; }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .desktop-left-padding-0 {
     padding-left: 0; } }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .desktop-right-padding-0 {
     padding-right: 0; } }
 
@@ -181,7 +181,7 @@ a.round-link {
   .desktop {
     display: none; } }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .mobile {
     display: none; } }
 

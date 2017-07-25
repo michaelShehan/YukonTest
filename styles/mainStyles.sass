@@ -64,7 +64,7 @@
         &:hover
             background-color: $black
             text-decoration: none
-        @media (min-width: 768px)
+        @media (min-width: 769px)
             display: none
     
 nav
@@ -110,7 +110,7 @@ nav
             @media (min-width: 645px)
                 width: 164px
                 left: 260px
-            @media (min-width: 768px)
+            @media (min-width: 769px)
                 display: none
         img#imgGoPublicMobile
             position: absolute
@@ -120,7 +120,7 @@ nav
             @media (min-width: 645px)
                 bottom: 36px
                 width: 182px
-            @media (min-width: 768px)
+            @media (min-width: 769px)
                 display: none
         
             
@@ -166,7 +166,7 @@ nav
                     color: $black
                     span.icon
                         background-color: $black
-                @media (min-width: 768px)
+                @media (min-width: 769px)
                     display: none
         .navbar-nav
             padding-top: 36px
@@ -269,7 +269,9 @@ nav
     .col-md-9, .col-sm-9
         padding-left: 0
         padding-right: 0
-        @media (min-width:768px)
+        width: 100%
+        
+        @media (min-width: 769px)
             width: 70%
             
         .content-block
@@ -277,7 +279,9 @@ nav
     .col-md-3, .col-sm-3
         padding-left: 0
         padding-right: 0
-        @media (min-width:768px)
+        width: 100%
+        
+        @media (min-width: 769px)
             width: 28.33%
             margin-left: 1.66%
             
@@ -304,7 +308,7 @@ nav
             margin-bottom: -9999px
     .col-sm-9
         .content-block
-            min-height: 670px
+            min-height: 635px
             
     .gopublic
         min-height: 390px
@@ -355,6 +359,9 @@ nav
                         width: 100%
                         
                 .pa-title
+                    width: 86.66%
+                    width: -webkit-calc(100% - 160px)
+                    width: -moz-calc(100% - 160px)
                     width: calc(100% - 160px)
                     float: left
                     @media (max-width: 480px)
@@ -362,6 +369,7 @@ nav
                         width: 100%
                     a
                         display: block
+                        width: 100%
                         min-height: 140px
                         background-color: $white !important
                         @include fontSizer(26px)
@@ -373,6 +381,9 @@ nav
                             @extend a
 
             .pa-description
+                width: 77.54%
+                width: -webkit-calc(100% - 20.08% - 20px)
+                width: -moz-calc(100% - 20.08% - 20px)
                 width: calc(100% - 20.08% - 20px)
                 float: left
                 min-height: 241px
@@ -396,15 +407,15 @@ nav
                 
 #route
     .col-sm-8
-        @media (min-width: 768px)
+        @media (min-width: 769px)
             width: 61.66%
             margin-right: 1.66%
         &.margin-left
-            @media (min-width: 768px)
+            @media (min-width: 769px)
                 margin-right: 0
                 margin-left: 1.66%
     .col-sm-4
-        @media (min-width: 768px)
+        @media (min-width: 769px)
             width: 36.68%
     .map-box
         iframe
@@ -412,7 +423,7 @@ nav
             min-height: 490px
     .address-block
         color: $white
-        @media (min-width: 768px)
+        @media (min-width: 769px)
             background-color: $aquaDark
         .content-block
             @media (max-width: 768px)
@@ -458,7 +469,7 @@ nav
         color: $white
     .tickets
         padding-top: 15px 
-        @media (min-width:768px)
+        @media (min-width:769px)
             border-left: $greyLight solid 2px
             min-height: 100px
             padding-left: 6.66%
@@ -480,10 +491,10 @@ nav
             &:first-child
                 padding-left: 0
     .col-sm-8
-        @media (min-width: 768px)
+        @media (min-width: 769px)
             width: 58.33%
     .col-sm-4
-        @media (min-width: 768px)
+        @media (min-width: 769px)
             width: 40%
             margin-left: 1.66%
             
