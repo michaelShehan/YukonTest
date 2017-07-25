@@ -25,7 +25,7 @@ $(window).resize(function(){
 })
 
 function heroContentPosition(){
-    var mq = window.matchMedia("(min-width: 1200px)");
+    var mq = window.matchMedia("(min-width: 1201px)");
     if(mq.matches){
         var hcHeight = $(".hero-content").height();
         var windowHeight = $(window).height();
@@ -65,7 +65,7 @@ function mobileMenuToggle(elem){
 function mobileMenuReset(){
     var link = $(".mobile-menu-link");
     var mobileMenu = $(".mobile-menu-wrapper");
-    var mq = window.matchMedia("(min-width: 768px)");
+    var mq = window.matchMedia("(min-width: 769px)");
     if(mq.matches){
         var state = link.attr("data-state");
         if(state == 1){
@@ -85,7 +85,7 @@ function mobileMenuReset(){
 
 function fixedMenuToggle(){
     $(window).scroll(function(){
-        var mq = window.matchMedia("(min-width: 768px)");
+        var mq = window.matchMedia("(min-width: 769px)");
         if(mq.matches){
             var contentTopVal = $("#event").offset().top;
             var heroHeight = $(".hero-header").height() -1;
